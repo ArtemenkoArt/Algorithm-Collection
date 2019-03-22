@@ -39,10 +39,11 @@ namespace _001_RemoveDuplicatesFromSortedArray
 
         static void Main(string[] args)
         {
-            int[] M = {1,1,1,2,2,3,4,4,6,8,7,7,7};
+            int[] M = {1,1,1,2,2,3,4,4,6,8,7,7,2,2,2,7};
             int n = 0;
             PrintArray(M, "Array before change: ");
             n = removeDuplicates(ref M);
+            // in the processed array, starting from the 9th index, the values ​​are not refilled
             PrintArray(M, "Array after change: ");
             Console.ReadKey();
         }
